@@ -22,7 +22,7 @@ import styles from './page.module.css'
  
 async function getData() {
  
-const wprest = await fetch('https://content.culturays.com/graphql',{
+const wprest = await fetch('http://content.culturays.com/graphql',{
   method: 'POST',
   headers:{
   'Content-Type':'application/json'
@@ -54,6 +54,6 @@ const wprest = await fetch('https://content.culturays.com/graphql',{
 // This is an async Server Component
 export default async function Page() {
   const data = await getData();
- 
+console.log(data)
   return <main>Text content</main>;
 }
