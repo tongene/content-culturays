@@ -8,7 +8,7 @@ export default async function Page() {
  //console.log( data.data.posts.nodes )
   return (
     <p>
-      hghg
+    text
     </p>
   );
 }

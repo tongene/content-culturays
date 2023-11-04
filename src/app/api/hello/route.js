@@ -7,7 +7,7 @@ export default async function getData() {
       headers:{
       'Content-Type':'application/json',
       },
-      body: JSON.parse(JSON.stringify({
+      body:  JSON.stringify({
         query:`
         query WPPOSTS {
       posts{ 
@@ -20,10 +20,9 @@ export default async function getData() {
            
         }
       }
-       }  
-       ` 
+       }`
       
-      }))
+      }) 
       
       })
      return wprest.json()
