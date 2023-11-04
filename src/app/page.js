@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-
+import getData from '../app/api/hello/route'
 // export default function Home() {
 //   return (
 //     <main className={styles.main}>
@@ -12,7 +12,7 @@ import styles from './page.module.css'
       
 //       </div>
 
-      
+       
 //     </main>
 //   )
 // }
@@ -20,6 +20,7 @@ import styles from './page.module.css'
 
 export default async function Page() {
   const data = await getData();
+ 
   return (
     <p>
       

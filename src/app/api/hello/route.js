@@ -1,5 +1,5 @@
- 
-async function getData() {
+
+export default async function getData() {
  
     const wprest = await fetch('http://content.culturays.com/graphql',{
       method: 'POST',
