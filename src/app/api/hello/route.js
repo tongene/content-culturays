@@ -1,8 +1,8 @@
 import axios from "axios";
 import fetch from "node-fetch";
 export default async function getData() {
- 
-    const wprest = await fetch('http://content.culturays.com/graphql',{
+    
+    const wprest = await fetch(`${NEXT_PUBLIC_URL}/graphql`,{
       method: 'POST',
       headers:{
       'Content-Type':'application/json',
