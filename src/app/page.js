@@ -19,8 +19,8 @@ import getData from '../app/api/hello/route'
 
 
 export default async function Page() {
-  const data = await getData();
- 
+ const data = await getData(); 
+ console.log( data.data.posts.nodes )
   return (
     <p>
       

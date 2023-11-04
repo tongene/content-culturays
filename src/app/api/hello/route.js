@@ -26,7 +26,8 @@ export default async function getData() {
       })
       
       })
-      return wprest.json();
+     return wprest.json()
+
     }
      
   
